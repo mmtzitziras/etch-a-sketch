@@ -20,7 +20,9 @@ function createGrid() {
     for (let i = 0; i < gridSize*gridSize; i++) {
         const div = document.createElement('div');
         div.addEventListener("mouseover", event => {
-            div.style.backgroundColor = 'red';
+            div.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255)
+            + "," + Math.floor(Math.random() * 255) + ","
+            + Math.floor(Math.random() * 255);
         });
         div.addEventListener("mouseout", event => {
             div.style.backgroundColor = 'white';
@@ -28,12 +30,6 @@ function createGrid() {
 
         div.style.width = `${(500/gridSize) - 2}px`;
         div.style.height = `${(500/gridSize) - 2}px`;
-        // if ( i % (gridSize + 1) === 0){
-            
-        //     div.style.height = "0";
-        //     div.style.border = "0";
-        //     div.style.marginRight = "100%";
-        // }
         container.appendChild(div);
     }
     
