@@ -6,9 +6,7 @@ body {
 .container{
     display: flex;
     flex-wrap: wrap;
-    min-width: 950px;
-    margin: 50px;
-    margin-left: 150px;
+    margin-left: 20px;
 }
 
 .container > div{
@@ -17,15 +15,17 @@ body {
     width: 40px;
 }
 
-.container > div:nth-child(17n + 1){
-     
-    margin-right: 100%;
-    height: 0;
-    border: 0;
-    
-}
 
 .div-hover {
     background-color: blueviolet    ;
+}
+
+.change-grid {
+    margin-left: 25px;
+    margin-right: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:blueviolet;
+    color: aliceblue;
 }
 
